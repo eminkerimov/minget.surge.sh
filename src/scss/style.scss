@@ -1,0 +1,105 @@
+@import "__variables.scss";
+@import "__reset.scss";
+@import "__fonts.scss";
+@import "__header.scss";
+@import "__footer.scss";
+
+body {
+	font-family: 'Segoe UI';
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+main {
+  height: 500px;
+  background: url("..//img/image1.png") no-repeat center;
+  background-size: cover;
+  h1 {
+    color: white;
+    font-size: 53px;
+    font-weight: bold;
+    margin-top: 250px;
+  }
+}
+
+.esas {
+  flex-direction: column;
+  justify-content: space-around;
+  .search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  input, .axtar {
+    width: 265px;
+    height: 50px;
+    padding: 10px;
+    &:focus {outline:3px solid $color2;}
+  }
+}
+
+.gray {
+  height: 185px;
+  background-color:$color5;
+  .row{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .col {
+      display: flex;
+      justify-content: space-around;
+      height: 105px;
+      width: 360px;
+      padding: 0px;
+      flex-basis: auto;
+      flex-grow: 0;
+      background-color: white;
+      border:1px solid $color5;
+      &:hover{
+        border: 1px solid $color2;
+        cursor: pointer;
+      }
+      .symbol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 90px;
+      }
+      .metn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 260px;
+        h4{
+          margin-top: auto;
+        }
+      }
+    }
+  }
+}
+//*****************  BUTUN DIVler RELATIVE-di*************************
+.navbar,.container-fluid,.esas,.menu,.footeri {
+  position: relative;
+  border:1px solid red;
+}
+ .menu {
+   height: 500px;
+   display:flex;
+   justify-content: space-between;
+   .menu-block {
+     width:555px;
+     height:355px;
+     border:1px solid red;
+   }
+ }
+
+
+
+
+.footeri {
+  background-color: rebeccapurple;
+  height: 50px;
+}

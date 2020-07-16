@@ -1,0 +1,56 @@
+
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+.green {
+    background-color: $color1;
+    height: 60px;
+}
+
+button {
+    height: 40px;
+}
+
+.btn-success {
+    background-color: $color2;
+    padding: 0;
+    &:nth-child(1) {width: 160px;}
+    &:nth-child(2) {width: 80px; margin-left: 10px;}
+    &:nth-child(4) {width: 100px; border-style: none; background-color: $color1;
+        &:hover {background-color: $color2;}
+    }
+    &:nth-child(5) {margin-left: 10px;
+        border-color: white;
+        background-color: $color1;
+        width: 145px;
+        &:hover {background-color: $color2;}
+    }
+
+}
+
+.btn-warning {
+    width: 145px;
+    margin-left: auto;
+    margin-right: 50px;
+    background-color: $color4;
+}
+
+ul {
+    margin-left: 35px;
+    li {
+        padding: 10px;
+    }
+}
+select {
+    border-style: none;
+    padding: 7px;
+    margin-left: 20px;
+    &:focus {
+        outline: none;
+    }
+    &:focus option:hover {
+        outline: none;
+        border-style: none;
+    }
+}

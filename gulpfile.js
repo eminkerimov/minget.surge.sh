@@ -12,24 +12,26 @@ let path={
         fonts:      project_folder + "/fonts",
     },
     src:{
-        html:   [source_folder + "/*.html", "!" + source_folder + "/__*.html"],
-        css:    source_folder + "/scss/style.scss",
-        cssLib: source_folder + "/scss/plugins.scss",
-        js:     source_folder + "/js/script.js",
-        img:    source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-        fonts:  source_folder + "/fonts/*.ttf",
+        html:      [source_folder + "/*.html", "!" + source_folder + "/__*.html"],
+        css:       source_folder + "/scss/style.scss",
+        cssLib:    source_folder + "/scss/plugins.scss",
+        js:        source_folder + "/js/script.js",
+        pluginsJs: source_folder + "/js/plugins/*.js",
+        img:       source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        fonts:     source_folder + "/fonts/*.ttf",
     },
     watch:{
-        html:   source_folder + "/**/*.html",
-        css:    source_folder + "/scss/**/*.scss",
-        cssLib: source_folder + "/scss/plugins.scss",
-        js:     source_folder + "/js/**/*.js",
-        img:    source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        html:      source_folder + "/**/*.html",
+        css:       source_folder + "/scss/**/*.scss",
+        cssLib:    source_folder + "/scss/plugins.scss",
+        js:        source_folder + "/js/**/*.js",
+        pluginsJs: source_folder + "/js/plugins/*.js",
+        img:       source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     },
     clean: "./" + project_folder + "/"
 }
 
-let { src, dest } = require('gulp'),
+let { src, dest } = require ('gulp'),
     gulp          = require ('gulp'),
     browsersync   = require ("browser-sync").create(),
     fileinclude   = require ("gulp-file-include"),
@@ -41,7 +43,9 @@ let { src, dest } = require('gulp'),
     imagemin      = require ("gulp-imagemin"),
     uglify        = require ("gulp-uglify-es").default,
     ttf2woff      = require ('gulp-ttf2woff'),
-    ttf2woff2     = require ('gulp-ttf2woff2');
+    ttf2woff2     = require ('gulp-ttf2woff2'),
+    concat        = require ('gulp-concat');
+
 
 
 function browserSync(params) {
@@ -114,14 +118,15 @@ function js() {
     return src(path.src.js)
         .pipe(fileinclude())
         .pipe(dest(path.build.js))
+        .pipe(browsersync.stream())
+}
+
+function pluginJs() {
+    return src(path.src.pluginsJs)
         .pipe(
             uglify()
         )
-        .pipe(
-            rename({
-                extname:".min.js"
-            })
-        )
+        .pipe(concat('plugins.min.js'))
         .pipe(dest(path.build.js))
         .pipe(browsersync.stream())
 }
@@ -149,11 +154,17 @@ function fonts(params) {
         .pipe(dest(path.build.fonts));
 }
 
+function fontscopy() {
+    src(path.src.fonts)
+    .pipe(dest(path.build.fonts));
+}
+
 function watchFiles(params) {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.cssLib], plugins);
     gulp.watch([path.watch.js], js);
+    gulp.watch([path.watch.pluginsJs], pluginJs);
     gulp.watch([path.watch.img], images);
 }
 
@@ -162,12 +173,14 @@ function watchFiles(params) {
 // }
 
 
-let build = gulp.series(/*clean,*/ gulp.parallel(js, css,plugins, html, images,fonts));
+let build = gulp.series(/*clean,*/ gulp.parallel(js,pluginJs,css, plugins, html, images,fonts,fontscopy));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fonts   = fonts;
+exports.fontscopy   = fontscopy;
 exports.images  = images;
 exports.js      = js;
+exports.pluginJs = pluginJs;
 exports.html    = html;
 exports.css     = css;
 exports.cssLib  = plugins;

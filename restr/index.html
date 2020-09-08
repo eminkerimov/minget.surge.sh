@@ -1,0 +1,471 @@
+<!-- Header -->
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Project3 v  </title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 col-md-2 col-lg-2">
+                        <a href="index.html" class="logo">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="mobil">
+                    <button onclick="myFunction()" class="mobil-button">
+                        <div class="mobil-button-span">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    </div>
+                    <div class="col-md-6 col-lg-7 menu">
+                        <ul>
+                            <li><a href="#">ƏSAS SƏHİFƏ</a></li>
+                            <li><a href="#">GEDİŞLƏR</a></li>
+                            <li><a href="#">KÖMƏK</a></li>
+                            <li><a href="#">ƏLAQƏ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-3 lang-panel">
+                        <select>
+                            <option>AZN</option>
+                            <option>USD</option>
+                            <option>RUB</option>
+                        </select>
+                        <select>
+                            <option>Azərbaycanca</option>
+                            <option>English</option>
+                            <option>Русский</option>  
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-xl-6 left">
+                        <ul>
+                            <li><a href="#">EHTIYYAT HİSSƏLƏRİ</a></li>
+                            <li><a href="#">TURLAR</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7 col-xl-6 right">
+                        <ul>
+                            <li><a class="link-warning" href="#">Gediş təklif et</a></li>
+                            <li><a class="link-success" href="#" data-toggle="modal" data-target="#login-modal">Daxil ol</a></li>
+                            <li><a class="link-success" href="#" data-toggle="modal" data-target="#register-modal">Qeydiyyat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile menu -->
+    <div id="myDIV" class="mobil-menu">
+        <div class="mobil-overlay"></div>
+        <div class="mobil-menu-block">
+            <ul class="mobil-menu-content">
+                <li><a href="#" class="link-mobile">Əsas Səhifə</a></li>
+                <li><a href="#" class="link-mobile">Gedişlər</a></li>
+                <li><a href="#" class="link-mobile">Kömək</a></li>
+                <li><a href="#" class="link-mobile">Əlaqə</a></li>
+            </ul>
+            <ul class="mobil-menu-tour">
+                <li><a href="#" class="link-mobile">Ehtiyat Hissələri</a></li>
+                <li><a href="#" class="link-mobile">Turlar</a></li>
+            </ul>
+            <ul class="mobil-menu-register">
+                <li><a href="#" class="link-mobile">Gediş Təklif Et</a></li>
+                <li><a href="#" class="link-mobile link-success" data-toggle="modal" data-target="#login-modal">Daxil Ol</a></li>
+                <li><a href="#" class="link-mobile link-success" data-toggle="modal" data-target="#register-modal">Qeydiyyat</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- Header end -->
+<!-- Main -->
+<section class="slider">
+    <div class="slider-image"><img src="img/image1.jpg"" alt=" image1"></div>
+    <div class="container slider-content">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="slider-content-title">GEDİŞ AXTAR</h1>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <input type="text" placeholder="Bakı dan">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <input type="text" placeholder="Şəki">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <input type="text" class="calendar" placeholder="30/09/2018">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <button type="button" class="button-success">AXTAR</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how-it-works">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="how-it-works-item">
+                    <div class="how-it-works-item-symbol"><img src="img/img1.png" alt="1"></div>
+                    <div class="how-it-works-item-desc">
+                        <h4><a href="#">Necə işləyir?</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="how-it-works-item">
+                    <div class="how-it-works-item-symbol"><img src="img/img2.png" alt="1"></div>
+                    <div class="how-it-works-item-desc">
+                        <h4><a href="#">F.A.Q</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="how-it-works-item">
+                    <div class="how-it-works-item-symbol"><img src="img/img3.png" alt="1"></div>
+                    <div class="how-it-works-item-desc">
+                        <h4><a href="#">Video Dərs</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tour-select">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tour-select-item">
+                    <div class="tour-select-item-icon"><img src="img/img1.svg" alt="img1"></div>
+                    <h3 class="tour-select-item-title">Öz maşınınızla səyahət etməyə hazırlaşırsız?</h3>
+                    <div class="tour-select-item-desc">
+                        <p>Gediş təklif et, müştərilər sənin yol xərclərini ödəsin və sizinlə həmsöhbət olaraq sizi
+                            darıxmağa qoymasın</p>
+                    </div>
+                    <div class="tour-select-item-link"><a class="link-success" href="#">Gediş təklif et</a></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tour-select-item">
+                    <div class="tour-select-item-icon"><img src="img/img2.svg" alt="img2"></div>
+                    <h3 class="tour-select-item-title">Konfortlu və ucuz səyahət arzulayırsınız?</h3>
+                    <div class="tour-select-item-desc">
+                        <p>Biz sizə yardımçı olarıq. MİN-GET Layihəsi məs sizə bu sahədə yardımçı olmaq üçün hazırlanıb.
+                        </p>
+                    </div>
+                    <div class="tour-select-item-link"><a class="link-warning" href="#">Qeydiyyatdan keç</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="popular-tour">
+    <div class="container">
+        <div class="popular-tour-header">
+            <h4>Ən məşhur gedişlər</h4>
+            <a href="#">Bütün məhşur gedişlərə bax</a>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="popular-tour-card">
+                    <div class="popular-tour-card-left">
+                            <span class="tour-date">3 Aprel</span>
+                            <span class="tour-time-from">09:30</span>
+                            <span class="tour-time-to">—12:00</span>
+                            <span class="tour-price">12 AZN</span>
+                            <span class="tour-dr">Bakı — Şəki</span>
+                            <span class="tour-empt-place">Boş yerlər 4/3 — 3 arxa oturacaqlar</span>
+                        <div class="more-info">
+                            <a class="link-warning-light" href="#">Ətraflı oxu</a>
+                        </div>
+                        <div class="icon-section">
+                            <span class="cigarette"></span>
+                            <span class="dog"></span>
+                        </div>
+                    </div>
+                    <div class="popular-tour-card-right">
+                        <div class="tour-driver"><img src="img/sur.svg" alt="driver"></div>
+                        <span class="tour-driver-nm">Aslan Muxtarov</span>
+                        <span class="tour-car">Mercedes-Benz Vito</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="popular-tour-card">
+                    <div class="popular-tour-card-left">
+                        <div>
+                            <span class="tour-date">3 Aprel</span>
+                            <span class="tour-time-from">09:30</span>
+                            <span class="tour-time-to">—12:00</span>
+                            <span class="tour-price">12 AZN</span>
+                        </div>
+                        <div>
+                            <span class="tour-dr">Bakı — Şəki</span>
+                        </div>
+                        <div>
+                            <span class="tour-empt-place">Boş yerlər 4/3 — 3 arxa oturacaqlar</span>
+                        </div>
+                        <div class="more-info">
+                            <a class="link-warning-light" href="#">Ətraflı oxu</a>
+                        </div>
+                        <div class="icon-section">
+                            <span class="cigarette"></span>
+                            <span class="dog"></span>
+                        </div>
+                    </div>
+                    <div class="popular-tour-card-right">
+                        <div class="tour-driver"><img src="img/sur2.svg" alt="driver"></div>
+                        <span class="tour-driver-nm">Arif Məmmədov</span>
+                        <span class="tour-car">Mercedes-Benz Vito</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="last-tour">
+    <div class="container">
+        <div class="last-tour-header">
+            <h4>SON ƏLAVƏ OLUNAN TURLAR</h4>
+            <div class="arrow">
+                <a href="#">
+                    <div class="arrow-l"></div>
+                </a>
+                <a href="#">
+                    <div class="arrow-r"></div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="last-tour-main">
+                    <div class="tour-image">
+                        <img src="img/tour1.jpg" alt="tour1">
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-loc">
+                            <h2>River İnn Boutique Hotel və Macara Village Resort</h2>
+                        </div>
+                        <div class="tour-desc">
+                            <p>Azərbaycan | Quba | Nabran | River Inn Hotel | Macara
+                                Village Resort | 3 gün / 2 gecə | 127 AZN | Üzümlüklərin
+                                və mənzərəli bağların əhatəsində, Xəzər dənizinin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-tour-bottom">
+                    <div class="icon-section">
+                        <span class="car"></span>
+                        <span class="food"></span>
+                    </div>
+                    <div class="last-tour-price">
+                        <h2>120 AZN</h2>
+                        <a class="link-success" href="#">ƏTRAFLI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="last-tour-main">
+                    <div class="tour-image">
+                        <img src="img/tour2.jpg" alt="tour1">
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-loc">
+                            <h2>River İnn Boutique Hotel və Macara Village Resort</h2>
+                        </div>
+                        <div class="tour-desc">
+                            <p>Azərbaycan | Quba | Nabran | River Inn Hotel | Macara
+                                Village Resort | 3 gün / 2 gecə | 127 AZN | Üzümlüklərin
+                                və mənzərəli bağların əhatəsində, Xəzər dənizinin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-tour-bottom">
+                    <div class="icon-section">
+                        <span class="car"></span>
+                        <span class="food"></span>
+                    </div>
+                    <div class="last-tour-price">
+                        <h2>120 AZN</h2>
+                        <a class="link-success" href="#">ƏTRAFLI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="all-tour">
+                    <a class="link-warning" href="#">Bütün turlara bax</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <form action="">
+                    <label for="">Yeniliklərə abunə olun</label>
+                    <input placeholder="Emailinizi daxil edin"></input>
+                    <button class="button-success">ABUNƏ OLUN</button>
+                </form>
+            </div>
+            <div class="col-lg-3 col-xl-4">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Main end -->
+<!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-5 col-lg-4">
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/logo-f.png" alt=""></a>
+                        </div>
+                        <div class="footer-info">
+                            <ul>
+                                <li>ÜNVAN: Azerbaijan, Baku, Kamil Rzayev 10, 29 AZ 1000</li>
+                                <li>
+                                    <span>PHONE:</span>
+                                    <a href="#">+994 12 444 58 85</a>
+                                </li>
+                                <li>
+                                    <span>MOBILE:</span>
+                                     <a href="tel:+994 70 859 58 60">+994 70 859 58 60</a>
+                                </li>
+                                <li>
+                                    <span>E-MAIL:</span>
+                                    <a href="mailto:info@minget.az">info@minget.az</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-7">
+                        <ul class="footer-menu">
+                            <li>
+                                <ul>
+                                    <span>HAQQIMIZDA</span>
+                                    <li><a href="#">Min Get Haqqında</a></li>
+                                    <li><a href="#">Üstünlüklərimiz</a></li>
+                                    <li><a href="#">Şirkət Rəhbərinin Müraciəti</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <span>HAQQIMIZDA</span>
+                                    <li><a href="#">Min Get Haqqında</a></li>
+                                    <li><a href="#">Üstünlüklərimiz</a></li>
+                                    <li><a href="#">Şirkət Rəhbərinin Müraciəti</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <span>HAQQIMIZDA</span>
+                                    <li><a href="#">Min Get Haqqında</a></li>
+                                    <li><a href="#">Üstünlüklərimiz</a></li>
+                                    <li><a href="#">Şirkət Rəhbərinin Müraciəti</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <div class="copyright">
+                            <p>© 2018 Min get. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+<!-- Log in modal -->
+  <div class="modal fade" id="login-modal" role="login">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Daxil ol</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+             <div class="form-group">
+                <label>İstifadəçi adı</label>
+                <input class="form-control" type="text" placeholder="ex: Zaur İsmayıllı">
+             </div>
+             <div class="form-group">
+                <label>Şifrə</label>
+                <input class="form-control" type="password" placeholder="*****">
+             </div>
+          </form>
+          <button type="submit" class="btn btn-default" >Giriş</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Register modal-->
+ <div class="modal fade" id="register-modal" role="register">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Qeydiyyat</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+             <div class="form-group">
+                <label>İstifadəçi adı</label>
+                <input class="form-control" type="text" placeholder="ex: Zaur İsmayıllı">
+             </div>
+             <div class="form-group">
+                <label>E-mail</label>
+                <input class="form-control" type="text" placeholder="ex: zaurismayilli@gmail.com">
+             </div>
+             <div class="form-group">
+                <label>Yeni şifrə daxil edin</label>
+                <input class="form-control" type="password" placeholder="*****">
+             </div>
+             <div class="form-group">
+                <label>Şifrəni təsdiq edin</label>
+                <input class="form-control" type="password" placeholder="*****">
+             </div>
+          </form>
+          <button type="submit" class="btn btn-default" >Qeydiyyatdan keç</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+        <script src="js/plugins.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,50 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/plugins.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
     <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/plugins.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Project3 v  </title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav mr-auto blc">
-                    <li class="nav-item"><a href="#" class="nav-link">ƏSAS SƏHİFƏ</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">GEDİŞLƏR</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">KÖMƏK</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">ƏLAQƏ</a></li>
-                </ul>
-                <select>
-                    <option>AZN</option>
-                    <option>USD</option>
-                    <option>RUB</option>
-                  </select>
-                  <select>
-                    <option>Azərbaycanca</option>
-                    <option>English</option>
-                    <option>Русский</option>
-                  </select>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 col-md-2 col-lg-2">
+                        <a href="index.html" class="logo">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="mobil">
+                    <button onclick="myFunction()" class="mobil-button">
+                        <div class="mobil-button-span">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    </div>
+                    <div class="col-md-6 col-lg-7 menu">
+                        <ul>
+                            <li><a href="#">ƏSAS SƏHİFƏ</a></li>
+                            <li><a href="#">GEDİŞLƏR</a></li>
+                            <li><a href="#">KÖMƏK</a></li>
+                            <li><a href="#">ƏLAQƏ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-3 lang-panel">
+                        <select>
+                            <option>AZN</option>
+                            <option>USD</option>
+                            <option>RUB</option>
+                        </select>
+                        <select>
+                            <option>Azərbaycanca</option>
+                            <option>English</option>
+                            <option>Русский</option>  
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container-fluid green">
-        <div class="container green">
-            <button type="button" class="btn btn-success">EHTIYYAT HİSSƏLƏRİ</button>
-            <button type="button" class="btn btn-success">TURLAR</button>
-            <button type="button" class="btn btn-warning">Gediş təklif et</button>
-            <button type="button" class="btn btn-success">Daxil ol</button>
-            <button type="button" class="btn btn-success">Qeydiyyat</button>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-xl-6 left">
+                        <ul>
+                            <li><a href="#">EHTIYYAT HİSSƏLƏRİ</a></li>
+                            <li><a href="#">TURLAR</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7 col-xl-6 right">
+                        <ul>
+                            <li><a class="link-warning" href="#">Gediş təklif et</a></li>
+                            <li><a class="link-success" href="#" data-toggle="modal" data-target="#login-modal">Daxil ol</a></li>
+                            <li><a class="link-success" href="#" data-toggle="modal" data-target="#register-modal">Qeydiyyat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile menu -->
+    <div id="myDIV" class="mobil-menu">
+        <div class="mobil-overlay"></div>
+        <div class="mobil-menu-block">
+            <ul class="mobil-menu-content">
+                <li><a href="#" class="link-mobile">Əsas Səhifə</a></li>
+                <li><a href="#" class="link-mobile">Gedişlər</a></li>
+                <li><a href="#" class="link-mobile">Kömək</a></li>
+                <li><a href="#" class="link-mobile">Əlaqə</a></li>
+            </ul>
+            <ul class="mobil-menu-tour">
+                <li><a href="#" class="link-mobile">Ehtiyat Hissələri</a></li>
+                <li><a href="#" class="link-mobile">Turlar</a></li>
+            </ul>
+            <ul class="mobil-menu-register">
+                <li><a href="#" class="link-mobile">Gediş Təklif Et</a></li>
+                <li><a href="#" class="link-mobile link-success" data-toggle="modal" data-target="#login-modal">Daxil Ol</a></li>
+                <li><a href="#" class="link-mobile link-success" data-toggle="modal" data-target="#register-modal">Qeydiyyat</a></li>
+            </ul>
         </div>
     </div>
-</header>

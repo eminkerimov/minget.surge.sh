@@ -2,12 +2,16 @@
 @@include('__header.html')
 <!-- Header end -->
 <!-- Main -->
-<section class="slider">
-    <div class="slider-image"><img src="img/image1.jpg"" alt=" image1"></div>
-    <div class="container slider-content">
+<section class="main">
+    <div class="slider">
+            <div class="slider-item"><img src="img/image1.jpg" alt="image1"></div>
+            <div class="slider-item"><img src="img/image2.jpg" alt="image2"></div>
+            <div class="slider-item"><img src="img/image3.jpg" alt="image3"></div>
+    </div>
+    <div class="container main-content">
         <div class="row">
             <div class="col-12">
-                <h1 class="slider-content-title">GEDİŞ AXTAR</h1>
+                <h1 class="main-content-title">GEDİŞ AXTAR</h1>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <input type="text" placeholder="Bakı dan">
@@ -92,7 +96,7 @@
             <h4>Ən məşhur gedişlər</h4>
             <a href="#">Bütün məhşur gedişlərə bax</a>
         </div>
-        <div class="row">
+        <div class="row slick">
             <div class="col-md-6">
                 <div class="popular-tour-card">
                     <div class="popular-tour-card-left">
@@ -147,6 +151,60 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="popular-tour-card">
+                    <div class="popular-tour-card-left">
+                            <span class="tour-date">3 Aprel</span>
+                            <span class="tour-time-from">09:30</span>
+                            <span class="tour-time-to">—12:00</span>
+                            <span class="tour-price">12 AZN</span>
+                            <span class="tour-dr">Bakı — Şəki</span>
+                            <span class="tour-empt-place">Boş yerlər 4/3 — 3 arxa oturacaqlar</span>
+                        <div class="more-info">
+                            <a class="link-warning-light" href="#">Ətraflı oxu</a>
+                        </div>
+                        <div class="icon-section">
+                            <span class="cigarette"></span>
+                            <span class="dog"></span>
+                        </div>
+                    </div>
+                    <div class="popular-tour-card-right">
+                        <div class="tour-driver"><img src="img/driver.jpg" alt="driver"></div>
+                        <span class="tour-driver-nm">Aslan Muxtarov</span>
+                        <span class="tour-car">Mercedes-Benz Vito</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="popular-tour-card">
+                    <div class="popular-tour-card-left">
+                        <div>
+                            <span class="tour-date">3 Aprel</span>
+                            <span class="tour-time-from">09:30</span>
+                            <span class="tour-time-to">—12:00</span>
+                            <span class="tour-price">12 AZN</span>
+                        </div>
+                        <div>
+                            <span class="tour-dr">Bakı — Şəki</span>
+                        </div>
+                        <div>
+                            <span class="tour-empt-place">Boş yerlər 4/3 — 3 arxa oturacaqlar</span>
+                        </div>
+                        <div class="more-info">
+                            <a class="link-warning-light" href="#">Ətraflı oxu</a>
+                        </div>
+                        <div class="icon-section">
+                            <span class="cigarette"></span>
+                            <span class="dog"></span>
+                        </div>
+                    </div>
+                    <div class="popular-tour-card-right">
+                        <div class="tour-driver"><img src="img/driver2.jpg" alt="driver"></div>
+                        <span class="tour-driver-nm">Arif Məmmədov</span>
+                        <span class="tour-car">Mercedes-Benz Vito</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -155,15 +213,9 @@
         <div class="last-tour-header">
             <h4>SON ƏLAVƏ OLUNAN TURLAR</h4>
             <div class="arrow">
-                <a href="#">
-                    <div class="arrow-l"></div>
-                </a>
-                <a href="#">
-                    <div class="arrow-r"></div>
-                </a>
             </div>
         </div>
-        <div class="row">
+        <div class="row slideshow">
             <div class="col-md-6">
                 <div class="last-tour-main">
                     <div class="tour-image">
@@ -218,11 +270,63 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="all-tour">
-                    <a class="link-warning" href="#">Bütün turlara bax</a>
+            <div class="col-md-6">
+                <div class="last-tour-main">
+                    <div class="tour-image">
+                        <img src="img/tour3.jpg" alt="tour1">
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-loc">
+                            <h2>River İnn Boutique Hotel və Macara Village Resort</h2>
+                        </div>
+                        <div class="tour-desc">
+                            <p>Azərbaycan | Quba | Nabran | River Inn Hotel | Macara
+                                Village Resort | 3 gün / 2 gecə | 127 AZN | Üzümlüklərin
+                                və mənzərəli bağların əhatəsində, Xəzər dənizinin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-tour-bottom">
+                    <div class="icon-section">
+                        <span class="car"></span>
+                        <span class="food"></span>
+                    </div>
+                    <div class="last-tour-price">
+                        <h2>120 AZN</h2>
+                        <a class="link-success" href="#">ƏTRAFLI</a>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="last-tour-main">
+                    <div class="tour-image">
+                        <img src="img/tour4.jpg" alt="tour1">
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-loc">
+                            <h2>River İnn Boutique Hotel və Macara Village Resort</h2>
+                        </div>
+                        <div class="tour-desc">
+                            <p>Azərbaycan | Quba | Nabran | River Inn Hotel | Macara
+                                Village Resort | 3 gün / 2 gecə | 127 AZN | Üzümlüklərin
+                                və mənzərəli bağların əhatəsində, Xəzər dənizinin...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-tour-bottom">
+                    <div class="icon-section">
+                        <span class="car"></span>
+                        <span class="food"></span>
+                    </div>
+                    <div class="last-tour-price">
+                        <h2>120 AZN</h2>
+                        <a class="link-success" href="#">ƏTRAFLI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all-tour">
+            <a class="link-warning" href="#">Bütün turlara bax</a>
         </div>
     </div>
 </section>

@@ -4,8 +4,10 @@ $(function() {
 
 
 function myFunction() {
-   var element = document.getElementById("myDIV");
+   var element = document.querySelector(".mobil-menu");
    element.classList.toggle("open");
+   var element = document.querySelector("body");
+   element.classList.toggle("overflow-hidden");
 }
 
 

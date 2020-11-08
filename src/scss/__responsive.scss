@@ -350,7 +350,7 @@
         display: block;
         position: absolute;
         right: 10px;
-        z-index: 19;
+        z-index: 4;
         &-button {
             width: 35px;
             height: 30px;
@@ -373,7 +373,10 @@
 
     .mobil-menu {
         position: absolute;
+        top:0;
         left: -100%;
+        @include square (100%);
+        transition: 1s;
         .mobil-overlay {
             position: absolute;
             top: 0px;
@@ -381,7 +384,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
-            z-index: 2;
+            z-index: 3;
         }
         .mobil-menu-block {
             background-color: #27ae60;
@@ -420,7 +423,6 @@
     }
 
     .open {
-        position: static;
         left: 0;
     }
 
